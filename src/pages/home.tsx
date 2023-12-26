@@ -68,8 +68,8 @@ const Home = () => {
   };
 
   return (
-    <div className="my-16 py-3 px-5">
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-5">
+    <div className="mt-16 mb-5 py-3 md:px-5 px-3">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 md:gap-5 gap-3">
         <div className="bg-white p-4 rounded-[16px] shadow">
           <div className="flex items-center pb-3 border-b">
             <div className="flex gap-3 text-gray-400 items-center">
@@ -83,7 +83,27 @@ const Home = () => {
             </div>
           </div>
           <div className="mt-3 flex items-center">
-            <LineChart width={100} className="z-10" height={100} data={data}>
+            <LineChart
+              width={100}
+              height={100}
+              className="md:block hidden"
+              data={data}
+            >
+              {/* <Tooltip /> */}
+              <Line
+                type="monotone"
+                dataKey="uv"
+                stroke="#A514F4"
+                dot={<CustomizedDot />}
+              />
+            </LineChart>
+
+            <LineChart
+              width={200}
+              height={100}
+              className="md:hidden block"
+              data={data}
+            >
               {/* <Tooltip /> */}
               <Line
                 type="monotone"
@@ -111,7 +131,27 @@ const Home = () => {
             </div>
           </div>
           <div className="mt-3 flex items-center">
-            <LineChart width={100} height={100} data={data}>
+            <LineChart
+              width={100}
+              height={100}
+              className="md:block hidden"
+              data={data}
+            >
+              {/* <Tooltip /> */}
+              <Line
+                type="monotone"
+                dataKey="uv"
+                stroke="#FF6B56"
+                dot={<CustomizedDot />}
+              />
+            </LineChart>
+
+            <LineChart
+              width={200}
+              height={100}
+              className="md:hidden block"
+              data={data}
+            >
               {/* <Tooltip /> */}
               <Line
                 type="monotone"
@@ -132,14 +172,34 @@ const Home = () => {
               <div className="bg-gray-100 h-[30px] w-[30px] rounded-md grid place-items-center">
                 <BsClipboardCheck />
               </div>
-              <div className="text-sm">Project Done</div>
+              <div className="text-sm">Project Completed</div>
             </div>
             <div className="ml-auto text-gray-900 text-lg font-semibold">
               30
             </div>
           </div>
           <div className="mt-3 flex items-center">
-            <LineChart width={100} height={100} data={data}>
+            <LineChart
+              width={100}
+              height={100}
+              className="md:block hidden"
+              data={data}
+            >
+              {/* <Tooltip /> */}
+              <Line
+                type="monotone"
+                dataKey="uv"
+                stroke="#84CC4A"
+                dot={<CustomizedDot />}
+              />
+            </LineChart>
+
+            <LineChart
+              width={200}
+              height={100}
+              className="md:hidden block"
+              data={data}
+            >
               {/* <Tooltip /> */}
               <Line
                 type="monotone"
@@ -166,15 +226,35 @@ const Home = () => {
               05
             </div>
           </div>
-          <div className="mt-3 flex items-center">
-            <LineChart width={100} className="z-10" height={100} data={data}>
+          <div className="mt-3 flex items-center z-0">
+            <LineChart
+              width={100}
+              height={100}
+              className="md:block hidden"
+              data={data}
+            >
               {/* <Tooltip /> */}
               <Line
                 type="monotone"
                 dataKey="uv"
                 stroke="#A21CB7"
                 dot={<CustomizedDot />}
-                className="z-10"
+                className="md:block hidden"
+              />
+            </LineChart>
+
+            <LineChart
+              width={200}
+              height={100}
+              className="md:hidden block"
+              data={data}
+            >
+              {/* <Tooltip /> */}
+              <Line
+                type="monotone"
+                dataKey="uv"
+                stroke="#A21CB7"
+                dot={<CustomizedDot />}
               />
             </LineChart>
             <div className="text-sm font-light text-gray-400 text-right">
