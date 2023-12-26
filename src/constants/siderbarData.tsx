@@ -26,41 +26,41 @@ export const sidebarData: SidebarInterface[] = [
   {
     title: "Task Tracker",
     icon: <BsClipboardCheck />,
-    path: "/",
+    path: "/task-tracker",
   },
   {
     title: "Progress",
     icon: <IoPieChartOutline />,
-    path: "/",
+    path: "/progress",
   },
   {
     title: "Calendar",
     icon: <IoCalendarClearOutline />,
-    path: "/",
+    path: "/calendar",
   },
   {
     title: "Reports",
     icon: <GoReport />,
-    path: "/",
+    path: "/reports",
   },
   {
     title: "Messages",
     icon: <IoChatbubbleOutline />,
-    path: "/",
+    path: "/messages",
   },
   {
     title: "Settings",
     icon: <IoSettingsOutline />,
-    path: "/",
+    path: "/settings",
   },
   {
     title: "Trash",
     icon: <LuTrash />,
-    path: "/",
+    path: "/trash",
   },
   {
     title: "Profile",
     icon: <FiUser />,
-    path: "/",
+    path: "/profile",
   },
 ];

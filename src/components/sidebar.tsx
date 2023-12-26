@@ -3,10 +3,11 @@ import Logo from "../utils/logo";
 import { SidebarContext } from "../context/sidebarContext";
 import { IoIosClose } from "react-icons/io";
 import { sidebarData } from "../constants/siderbarData";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
   const { open, setOpen } = useContext(SidebarContext);
+  const location = useLocation();
 
   return (
     <>
@@ -29,7 +30,13 @@ const Sidebar = () => {
 
             return (
               <Link to={path} key={index} className="outline-none no-underline">
-                <div className="py-2.5 px-2 rounded-md duration-500 hover:bg-gray-100 bg-transparent flex items-center gap-3">
+                <div
+                  className={`py-2.5 px-2 rounded-md duration-500 hover:bg-gray-100 flex items-center gap-3 ${
+                    location.pathname === path
+                      ? "bg-gray-100"
+                      : "bg-transparent"
+                  }`}
+                >
                   {icon}
                   <div className="text-base">{title}</div>
                 </div>
