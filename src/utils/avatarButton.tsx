@@ -56,7 +56,7 @@ const Avatar = () => {
         >
           <Popover.Panel
             className={
-              "absolute left-1/2 md:-translate-x-1/2 -translate-x-[190px] w-[230px] z-50 mt-5 flex px-4"
+              "absolute left-1/2 md:-translate-x-1/2 -translate-x-[190px] w-[230px] z-20 mt-5 flex px-4"
             }
           >
             <div className="w-screen max-w-md flex-auto overflow-hidden rounded-md bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
