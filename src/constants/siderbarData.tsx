@@ -4,8 +4,8 @@ import { BsClipboardCheck } from "react-icons/bs";
 import { GoReport } from "react-icons/go";
 import { FiUser } from "react-icons/fi";
 import { LuTrash } from "react-icons/lu";
+import { GoProjectSymlink } from "react-icons/go";
 import {
-  IoPieChartOutline,
   IoChatbubbleOutline,
   IoCalendarClearOutline,
   IoSettingsOutline,
@@ -29,9 +29,9 @@ export const sidebarData: SidebarInterface[] = [
     path: "/task-tracker",
   },
   {
-    title: "Progress",
-    icon: <IoPieChartOutline />,
-    path: "/progress",
+    title: "Projects",
+    icon: <GoProjectSymlink />,
+    path: "/projects",
   },
   {
     title: "Calendar",
