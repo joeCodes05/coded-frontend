@@ -20,7 +20,7 @@ const LeftBar = () => {
 
         <div className="bg-light rounded-md p-4 mt-3">
           <h1 className="text-gray-900 font-semibold text-base">
-            People you may know
+            Suggested for you
           </h1>
 
           <div className="mt-4 flex flex-col space-y-3">
