@@ -33,7 +33,7 @@ const TaskCard = () => {
 
         <div className="mt-3 flex flex-col space-y-[10px]">
           <TodoCard title="Wash the cars" completed={true} />
-          <TodoCard title="Clean my room" completed={true} />
+          <TodoCard title="Wash clothes" completed={false} />
           <TodoCard title="Walk the dog" completed={false} />
           <TodoCard title="Read books" completed={false} />
 

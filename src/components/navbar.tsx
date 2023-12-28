@@ -10,10 +10,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-white py-3 z-30 fixed top-0 right-0 lg:w-[80%] md:w-[75%] w-full lg:px-8 md:px-5 px-3 shadow h-fit flex md:gap-0 gap-3">
+      <nav className="bg-white py-3 z-30 fixed top-0 right-0 lg:w-[80%] w-full lg:px-8 md:px-5 px-3 shadow h-fit flex lg:gap-0 gap-3">
         <button
           onClick={() => setOpen(true)}
-          className="outline-none bg-transparent p-0 text-xl block md:hidden"
+          className="outline-none bg-transparent p-0 text-xl block lg:hidden"
         >
           <FcMenu />
         </button>

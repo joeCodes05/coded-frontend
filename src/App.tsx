@@ -12,7 +12,7 @@ const App = () => {
         <main className="flex bg-light h-screen overflow-hidden font-poppins">
           <Sidebar />
           <Navbar />
-          <div className="md:w-[80%] mt-16 overflow-x-hidden w-full overflow-y-auto">
+          <div className="lg:w-[80%] mt-16 overflow-x-hidden w-full overflow-y-auto">
             <Routes>
               <Route element={<Home />} path="/" />
               <Route element={<TaskTracker />} path="/task-tracker" />

@@ -55,7 +55,7 @@ const Home = () => {
 
   return (
     <div className="mb-5 py-3 md:px-5 px-3">
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 md:gap-5 gap-3">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1 md:gap-5 gap-3">
         {cardValues.map((data, index) => {
           const { icon, message, messageValue, stroke, title, value } = data;
 
@@ -73,11 +73,11 @@ const Home = () => {
         })}
       </div>
 
-      <div className="flex flex-row mt-5 md:gap-5 gap-3">
-        <div className="basis-2/3">
+      <div className="flex lg:flex-row flex-col mt-5 md:gap-5 gap-3">
+        <div className="lg:basis-2/3 md:basis-1/2 basis-0">
           <TaskDone />
         </div>
-        <div className="basis-1/3">
+        <div className="lg:basis-2/3 md:hidden">
           <TaskCard />
         </div>
       </div>

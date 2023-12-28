@@ -12,13 +12,13 @@ const Sidebar = () => {
   return (
     <>
       <aside
-        className={`h-full lg:w-[20%] md:w-[25%] w-[80%] md:relative overflow-hidden z-30 md:left-0 ${
+        className={`h-full lg:w-[20%] md:w-[50%] w-[80%] lg:relative overflow-hidden z-30 lg:left-0 ${
           open ? "left-0" : "-left-full"
         } duration-500 fixed shadow bg-white overflow-hidden z-40`}
       >
         <button
           onClick={() => setOpen(false)}
-          className="absolute md:hidden outline-none text-4xl mx-3 top-[2%] right-0 text-gray-900 grid place-items-center"
+          className="absolute lg:hidden outline-none text-4xl mx-3 top-[2%] right-0 text-gray-900 grid place-items-center"
         >
           <IoIosClose />
         </button>

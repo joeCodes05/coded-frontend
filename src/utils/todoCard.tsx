@@ -17,7 +17,7 @@ const TodoCard = ({ title, completed }: TodoCardType) => {
           <div className="flex items-center gap-2">
             <h4 className="text-gray-900 font-semibold text-sm">{title}</h4>
             {completed ? (
-              <div className="w-fit py-[1px] px-2 rounded-md ring-1 ring-green-500 bg-green-100 text-green-500 text-[.7rem]">
+              <div className="w-fit p-[1px] rounded-md ring-1 ring-green-500 bg-green-100 text-green-500 text-[.7rem]">
                 Completed
               </div>
             ) : (
