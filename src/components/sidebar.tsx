@@ -12,9 +12,9 @@ const Sidebar = () => {
   return (
     <>
       <aside
-        className={`h-full lg:w-[20%] md:w-[50%] w-[80%] lg:relative overflow-hidden z-30 lg:left-0 ${
+        className={`h-full lg:w-[25%] md:w-[50%] w-[80%] overflow-hidden z-20 lg:left-0 ${
           open ? "left-0" : "-left-full"
-        } duration-500 fixed shadow bg-white overflow-hidden z-40`}
+        } duration-500 fixed shadow bg-white overflow-hidden`}
       >
         <button
           onClick={() => setOpen(false)}
@@ -24,17 +24,15 @@ const Sidebar = () => {
         </button>
         <Logo />
 
-        <div className="md:py-10 py-5 overflow-y-auto px-5 md:max-h-full max-h-[100%] flex flex-col space-y-3">
+        <div className="md:py-10 py-5 overflow-y-auto px-5 md:max-h-full max-h-full flex flex-col space-y-3">
           {sidebarData.map((data, index) => {
             const { title, icon, path } = data;
 
             return (
               <Link to={path} key={index} className="outline-none no-underline">
                 <div
-                  className={`py-2.5 px-2 rounded-md duration-500 hover:bg-gray-100 flex items-center gap-3 ${
-                    location.pathname === path
-                      ? "bg-gray-100"
-                      : "bg-transparent"
+                  className={`p-2 rounded-md duration-500 hover:bg-light flex items-center gap-3 ${
+                    location.pathname === path ? "bg-light" : "bg-transparent"
                   }`}
                 >
                   {icon}

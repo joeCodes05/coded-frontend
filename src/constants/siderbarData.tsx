@@ -1,15 +1,5 @@
 import { ReactElement } from "react";
-import { RxDashboard } from "react-icons/rx";
-import { BsClipboardCheck } from "react-icons/bs";
-import { GoReport } from "react-icons/go";
-import { FiUser } from "react-icons/fi";
-import { LuTrash } from "react-icons/lu";
-import { GoProjectSymlink } from "react-icons/go";
-import {
-  IoChatbubbleOutline,
-  IoCalendarClearOutline,
-  IoSettingsOutline,
-} from "react-icons/io5";
+import * as GoIcons from "react-icons/go";
 
 interface SidebarInterface {
   title: string;
@@ -19,48 +9,48 @@ interface SidebarInterface {
 
 export const sidebarData: SidebarInterface[] = [
   {
-    title: "Dashboard",
-    icon: <RxDashboard />,
+    title: "Home",
+    icon: <GoIcons.GoHome />,
     path: "/",
   },
   {
-    title: "Task Tracker",
-    icon: <BsClipboardCheck />,
-    path: "/task-tracker",
+    title: "Explore",
+    icon: <GoIcons.GoSearch />,
+    path: "/explore",
   },
   {
-    title: "Projects",
-    icon: <GoProjectSymlink />,
+    title: "Bookmarks",
+    icon: <GoIcons.GoBookmark />,
     path: "/projects",
   },
   {
-    title: "Calendar",
-    icon: <IoCalendarClearOutline />,
-    path: "/calendar",
+    title: "Community",
+    icon: <GoIcons.GoPeople />,
+    path: "/community",
   },
   {
-    title: "Reports",
-    icon: <GoReport />,
-    path: "/reports",
+    title: "Reels",
+    icon: <GoIcons.GoVersions />,
+    path: "/reels",
   },
   {
     title: "Messages",
-    icon: <IoChatbubbleOutline />,
+    icon: <GoIcons.GoComment />,
     path: "/messages",
   },
   {
     title: "Settings",
-    icon: <IoSettingsOutline />,
+    icon: <GoIcons.GoGear />,
     path: "/settings",
   },
   {
-    title: "Trash",
-    icon: <LuTrash />,
-    path: "/trash",
+    title: "Report a problem",
+    icon: <GoIcons.GoAlert />,
+    path: "/report-problem",
   },
   {
     title: "Profile",
-    icon: <FiUser />,
+    icon: <GoIcons.GoPerson />,
     path: "/profile",
   },
 ];

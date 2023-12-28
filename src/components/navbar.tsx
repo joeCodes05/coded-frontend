@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { IoSearch } from "react-icons/io5";
+import React, { useContext, useEffect, useState } from "react";
 import { FcMenu } from "react-icons/fc";
 import { GoBell, GoUpload } from "react-icons/go";
 import Avatar from "../utils/avatarButton";
@@ -7,10 +6,25 @@ import { SidebarContext } from "../context/sidebarContext";
 
 const Navbar = () => {
   const { setOpen } = useContext(SidebarContext);
+  const [navState, setNavState] = useState(false);
 
+  const updateNavState = () => {
+    if (window.scrollY >= 60) {
+      setNavState(true);
+    } else setNavState(false);
+  };
+
+  useEffect(() => {
+    updateNavState();
+    window.addEventListener("scroll", updateNavState);
+  });
   return (
     <>
-      <nav className="bg-white py-3 z-30 fixed top-0 right-0 lg:w-[80%] w-full lg:px-8 md:px-5 px-3 shadow h-fit flex lg:gap-0 gap-3">
+      <nav
+        className={`bg-white py-3 w-full md:px-5 px-3 shadow h-fit flex lg:gap-0 gap-3 z-10 ${
+          navState ? "sticky top-0" : "relative"
+        }`}
+      >
         <button
           onClick={() => setOpen(true)}
           className="outline-none bg-transparent p-0 text-xl block lg:hidden"
@@ -18,18 +32,9 @@ const Navbar = () => {
           <FcMenu />
         </button>
 
-        <div className="md:basis-1/2 basis-2/3 flex bg-light rounded-full items-center py-1.5 px-2 gap-2">
-          <div>
-            <IoSearch />
-          </div>
-          <input
-            type="text"
-            placeholder="Search for anything..."
-            className="w-full bg-transparent outline-none placeholder:text-gray-900 placeholder:text-sm"
-          />
-        </div>
+        <Avatar />
 
-        <div className="md:basis-1/2 basis-1/3 float-right">
+        <div className="ml-auto">
           <div className="ml-auto w-fit">
             <div className="flex gap-3 items-center">
               <button className="h-[30px] group w-[30px] relative bg-light ring-1 rounded-full ring-gray-400 grid place-items-center">
@@ -44,7 +49,6 @@ const Navbar = () => {
                   Notifications
                 </div>
               </button>
-              <Avatar />
             </div>
           </div>
         </div>
