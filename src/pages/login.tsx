@@ -9,7 +9,7 @@ const Login = () => {
   return (
     <>
       <div className="fixed top-0 left-0 z-30 h-full bg-gray-900 bg-opacity-70 w-full flex items-center justify-center">
-        <div className="bg-white rounded-[16px] shadow p-10 w-[450px]">
+        <div className="bg-white rounded-[16px] shadow p-8 w-[450px]">
           <div className="mx-auto w-fit">
             <Logo />
           </div>
