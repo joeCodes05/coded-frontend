@@ -9,7 +9,7 @@ const Login = () => {
   return (
     <>
       <div className="fixed top-0 left-0 z-30 h-full bg-gray-900 bg-opacity-70 w-full flex items-center justify-center">
-        <div className="bg-white rounded-[16px] shadow p-8 w-[450px]">
+        <div className="bg-white rounded-[16px] shadow md:p-8 p-5 md:w-[450px] w-[350px]">
           <div className="mx-auto w-fit">
             <Logo />
           </div>
@@ -35,7 +35,7 @@ const Login = () => {
                 </div>
                 <Link
                   to="/"
-                  className="ml-auto w-fit text-sm text-primary underline block font-light"
+                  className="ml-auto w-fit text-[.8rem] text-primary underline block font-light"
                 >
                   Forgot password?
                 </Link>
@@ -47,10 +47,17 @@ const Login = () => {
               </div>
             </form>
 
+            <div className="text-gray-600 mt-2 text-[.8rem] font-light">
+              Don't have an account?{" "}
+              <Link to="/" className="underline text-primary">
+                Sign Up
+              </Link>
+            </div>
+
             <div className="py-3 flex items-center text-sm text-gray-900 before:flex-[1_1_0%] before:border-t before:border-gray-200 before:me-3 after:flex-[1_1_0%] after:border-t after:border-gray-200 after:ms-3">
               or
             </div>
-            <div className="flex items-center gap-3">
+            <div className="flex md:flex-row flex-col items-center gap-3">
               <ThirdPartyBtn
                 icon={<FcGoogle className="text-2xl" />}
                 text="Continue with google"
