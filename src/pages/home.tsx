@@ -4,6 +4,8 @@ import { BsClipboardCheck } from "react-icons/bs";
 import { LuClipboardList } from "react-icons/lu";
 import { IoTimerOutline } from "react-icons/io5";
 import DailyCards from "../components/dailyCards";
+import TaskDone from "../components/tastDone";
+import TaskCard from "../components/taskCard";
 
 const Home = () => {
   interface CardValues {
@@ -69,6 +71,15 @@ const Home = () => {
             />
           );
         })}
+      </div>
+
+      <div className="flex flex-row mt-5 md:gap-5 gap-3">
+        <div className="basis-2/3">
+          <TaskDone />
+        </div>
+        <div className="basis-1/3">
+          <TaskCard />
+        </div>
       </div>
     </div>
   );
