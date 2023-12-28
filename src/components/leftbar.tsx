@@ -36,7 +36,7 @@ const LeftBar = () => {
                       </div>
 
                       <div className="text-left md:block hidden">
-                        <h5 className="text-gray-900 font-semibold text-sm truncate overflow-hidden max-w-[150px]">
+                        <h5 className="text-gray-900 font-semibold text-sm truncate overflow-hidden xl:max-w-[150px] max-w-[100px]">
                           {name}
                         </h5>
                         <h5 className="text-gray-500 text-[.7rem]">
