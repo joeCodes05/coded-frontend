@@ -13,7 +13,7 @@ const App = () => {
       <Router>
         <main className="lg:flex block font-poppins overflow-x-hidden">
           <Sidebar />
-          <div className="lg:w-[50%] lg:mx-auto w-screen">
+          <div className="lg:w-[50%] h-full lg:mx-auto w-screen">
             <Navbar />
             <Routes>
               <Route element={<Home />} path="/" />
