@@ -24,7 +24,7 @@ const Sidebar = () => {
         </button>
         <Logo />
 
-        <div className="md:py-10 py-5 overflow-y-auto px-5 md:max-h-full max-h-full flex flex-col space-y-3">
+        <div className="md:py-10 lg:py-10 py-5 max-[717px]:pb-24 overflow-y-auto px-4 md:max-h-full max-h-full flex flex-col space-y-3">
           {sidebarData.map((data, index) => {
             const { title, icon, path } = data;
 
