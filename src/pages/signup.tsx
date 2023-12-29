@@ -1,16 +1,20 @@
 import { Link } from "react-router-dom";
-import Logo from "../utils/logo";
-// import ThirdPartyBtn from "../utils/thirdPartyBtn";
-// import { FcGoogle } from "react-icons/fc";
-// import { IoLogoApple } from "react-icons/io5";
-import InputField from "../utils/inputFields";
 import PasswordFiled from "../utils/passwordInput";
-import { useState } from "react";
+import InputField from "../utils/inputFields";
+import Logo from "../utils/logo";
+import React, { useState } from "react";
 
-const Login = () => {
-  const [userNameEmail, setUserNameEmail] = useState("");
-  const getCurrentValue = (e: React.FormEvent<HTMLInputElement>) => {
-    setUserNameEmail(e.currentTarget.value);
+const SignUp = () => {
+  const [userName, setUserName] = useState("");
+
+  const getUserName = (e: React.FormEvent<HTMLInputElement>) => {
+    setUserName(e.currentTarget.value);
+  };
+
+  const [emailAddress, setEmailAddress] = useState("");
+
+  const getEmail = (e: React.FormEvent<HTMLInputElement>) => {
+    setEmailAddress(e.currentTarget.value);
   };
 
   const [password, setPassword] = useState("");
@@ -31,19 +35,21 @@ const Login = () => {
               <div>
                 <InputField
                   type="text"
-                  value={userNameEmail}
-                  onchange={getCurrentValue}
-                  placeholder="Username or email"
+                  value={userName}
+                  onchange={getUserName}
+                  placeholder="Username"
+                />
+              </div>
+              <div>
+                <InputField
+                  type="text"
+                  value={emailAddress}
+                  onchange={getEmail}
+                  placeholder="Eamil address"
                 />
               </div>
               <div>
                 <PasswordFiled value={password} onchange={getPassword} />
-                <Link
-                  to="/"
-                  className="ml-auto w-fit text-[.8rem] text-primary underline block font-light"
-                >
-                  Forgot password?
-                </Link>
               </div>
               <div>
                 <button className="p-2 rounded-md bg-primary shadow text-white w-full outline-none">
@@ -53,9 +59,9 @@ const Login = () => {
             </form>
 
             <div className="text-gray-600 mt-2 text-[.8rem] font-light">
-              Don't have an account?{" "}
-              <Link to="/signup" className="underline text-primary">
-                Sign Up
+              Already have an account?{" "}
+              <Link to="/login" className="underline text-primary">
+                Login
               </Link>
             </div>
 
@@ -79,4 +85,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
