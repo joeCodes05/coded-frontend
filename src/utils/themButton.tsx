@@ -1,7 +1,6 @@
 import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { IoColorPaletteOutline } from "react-icons/io5";
-import check from "../assets/svg/check.svg";
 
 const ThemeButton = () => {
   return (
@@ -28,24 +27,47 @@ const ThemeButton = () => {
                 </h3>
 
                 <div className="mt-3">
-                  <div className="flex flex-col space-y-2">
-                    <button className="p-2 rounded-md outline-none duration-300 text-left bg-transparent hover:bg-light text-gray-900 text-sm flex items-center gap-2">
-                      <div className="h-[13px] w-[13px] rounded-full overflow-hidden ring-1 ring-gray-400"></div>
+                  <form className="flex flex-col space-y-2">
+                    <label
+                      htmlFor="systemDefault"
+                      className="p-2 rounded-md outline-none duration-300 text-left bg-transparent hover:bg-light text-gray-900 text-sm flex items-center gap-2"
+                    >
+                      <input
+                        type="radio"
+                        className="accent-primary outline-none"
+                        id="systemDefault"
+                        name="theme"
+                      />
                       <div>System default</div>
-                    </button>
+                    </label>
 
-                    <button className="p-2 rounded-md outline-none duration-300 text-left bg-transparent hover:bg-light text-gray-900 text-sm flex items-center gap-2">
-                      <div className="h-[13px] w-[13px] rounded-full overflow-hidden ring-1 ring-gray-400">
-                        <img src={check} width={"100%"} alt="check svg" />
-                      </div>
+                    <label
+                      htmlFor="lightMode"
+                      className="p-2 rounded-md outline-none duration-300 text-left bg-transparent hover:bg-light text-gray-900 text-sm flex items-center gap-2"
+                    >
+                      <input
+                        type="radio"
+                        className="accent-primary outline-none"
+                        checked
+                        id="lightMode"
+                        name="theme"
+                      />
                       <div>Light mode</div>
-                    </button>
+                    </label>
 
-                    <button className="p-2 rounded-md outline-none duration-300 text-left bg-transparent hover:bg-light text-gray-900 text-sm flex items-center gap-2">
-                      <div className="h-[13px] w-[13px] rounded-full overflow-hidden ring-1 ring-gray-400"></div>
+                    <label
+                      htmlFor="darkMode"
+                      className="p-2 rounded-md outline-none duration-300 text-left bg-transparent hover:bg-light text-gray-900 text-sm flex items-center gap-2"
+                    >
+                      <input
+                        type="radio"
+                        className="accent-primary outline-none"
+                        id="darkMode"
+                        name="theme"
+                      />
                       <div>Dark mode</div>
-                    </button>
-                  </div>
+                    </label>
+                  </form>
                 </div>
               </div>
             </div>

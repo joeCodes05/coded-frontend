@@ -6,7 +6,7 @@ import { IoSearch } from "react-icons/io5";
 const LeftBar = () => {
   return (
     <>
-      <div className="bg-white w-[25%] lg:block fixed right-0 h-full hidden shadow z-20 p-4">
+      <div className="bg-white w-[30%] overflow-hidden lg:block fixed right-0 h-full hidden shadow z-20 p-4">
         <div className="md:basis-1/2 basis-2/3 flex bg-light rounded-md items-center p-2 gap-2">
           <div>
             <IoSearch />
@@ -36,7 +36,7 @@ const LeftBar = () => {
                       </div>
 
                       <div className="text-left md:block hidden">
-                        <h5 className="text-gray-900 font-semibold text-sm truncate overflow-hidden xl:max-w-[100px] max-w-[50px]">
+                        <h5 className="text-gray-900 font-semibold text-sm truncate overflow-hidden xl:max-w-[200px] max-w-[50px]">
                           {name}
                         </h5>
                         <h5 className="text-gray-500 text-[.7rem] xl:max-w-fit max-w-[70px] truncate">
