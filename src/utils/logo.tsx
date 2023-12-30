@@ -1,14 +1,24 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/svg/logo.svg";
+import logoSvg from "../assets/svgs/logo.svg";
+import logoSvgMobile from "../assets/svgs/logo-mobile.svg";
 
-function Logo() {
+const Logo: React.FC = () => {
   return (
-    <Link to="/" className="no-underline outline-none">
-      <div className="py-3 px-5">
-        <img src={logo} width={"100"} alt="logo" />
-      </div>
-    </Link>
+    <>
+      <Link to="/" className="no-underline outline-none">
+        <img
+          className="h-10 w-auto sm:block hidden"
+          src={logoSvg}
+          alt="coded logo"
+        />
+        <img
+          className="h-10 ml-14 w-auto sm:hidden block"
+          src={logoSvgMobile}
+          alt="coded logo"
+        />
+      </Link>
+    </>
   );
-}
+};
 
 export default Logo;
