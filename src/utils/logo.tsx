@@ -12,7 +12,7 @@ const Logo: React.FC = () => {
           alt="coded logo"
         />
         <img
-          className="h-10 ml-14 w-auto sm:hidden block"
+          className="h-8 ml-24 w-auto sm:hidden block"
           src={logoSvgMobile}
           alt="coded logo"
         />

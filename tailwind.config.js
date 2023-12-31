@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        light: "#F2F2F2",
-        primary: "#A514F4",
-        orange: "#FF6B56",
+        primary: "#E8BF5A",
+      },
+      backgroundImage: {
+        "vector-pattern": "url('/src/assets/svgs/Vector 4.svg')",
       },
     },
     fontFamily: {

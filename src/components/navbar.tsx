@@ -3,8 +3,7 @@ import { Disclosure } from "@headlessui/react";
 import { IoCloseOutline, IoMenuOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import Logo from "../utils/logo";
-import { IoIosArrowRoundForward } from "react-icons/io";
-import PrimaryButton from "../utils/primaryButton";
+import BlackButton from "../utils/blackButton";
 
 const Navbar: React.FC = () => {
   interface NavbarLinksTypes {
@@ -43,13 +42,13 @@ const Navbar: React.FC = () => {
     <>
       <Disclosure
         as="nav"
-        className={`bg-white font-poppins duration-500 ease-in fixed top-0 left-0 right-0 w-screen ${
-          navFixed ? "shadow-md" : "shadow-none"
+        className={`bg-white font-poppins z-40 ease-in border-b ${
+          navFixed ? "sticky top-0 left-0 right-0 w-screen" : "relative"
         }`}
       >
         {({ open }) => (
           <>
-            <div className="mx-auto max-w-7xl px-2 py-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-6xl py-3 xl:px-0 lg:px-6 px-2">
               <div className="relative flex h-fix items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
                   {/* Mobile menu button*/}
@@ -57,15 +56,9 @@ const Navbar: React.FC = () => {
                     <span className="absolute -inset-0.5" />
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-                      <IoCloseOutline
-                        className="block h-6 w-6"
-                        aria-hidden="true"
-                      />
+                      <IoCloseOutline className="text-2xl" aria-hidden="true" />
                     ) : (
-                      <IoMenuOutline
-                        className="block h-6 w-6"
-                        aria-hidden="true"
-                      />
+                      <IoMenuOutline className="text-2xl" aria-hidden="true" />
                     )}
                   </Disclosure.Button>
                 </div>
@@ -73,7 +66,7 @@ const Navbar: React.FC = () => {
                   <Logo />
 
                   <div className="hidden lg:mx-auto lg:flex lg:items-center">
-                    <div className="flex space-x-10 items-center">
+                    <div className="flex xl:space-x-10 lg:space-x-5 items-center">
                       {navbarLinks.map((data, index) => {
                         const { name, path, isActive } = data;
 
@@ -93,19 +86,8 @@ const Navbar: React.FC = () => {
                   </div>
                 </div>
                 <div>
-                  <Link
-                    className="no-underline outline-none sm:block hidden"
-                    to="/sign-up"
-                  >
-                    <PrimaryButton text="Get started" onClick={() => {}} />
-                  </Link>
-
-                  <Link
-                    to={"/sign-up"}
-                    className="no-underline sm:hidden outline-none text-gray-900 flex items-center gap-2 font-semibold"
-                  >
-                    <div>Get Started</div>
-                    <IoIosArrowRoundForward className="text-xl" />
+                  <Link className="no-underline outline-none" to="/sign-up">
+                    <BlackButton text="Get started" onClick={() => {}} />
                   </Link>
                 </div>
               </div>
