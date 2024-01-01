@@ -8,6 +8,7 @@ module.exports = {
       },
       backgroundImage: {
         "vector-pattern": "url('/src/assets/svgs/Vector 4.svg')",
+        hero: "url('/src/assets/images/hero_img.jpg')",
       },
     },
     fontFamily: {

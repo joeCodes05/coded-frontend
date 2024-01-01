@@ -7,6 +7,9 @@ const Logo: React.FC = () => {
     <>
       <Link to="/" className="no-underline outline-none">
         <img
+          data-aos="fade-down"
+          ata-aos-easing="ease-in"
+          data-aos-duration="1000"
           className="h-10 w-auto sm:block hidden"
           src={logoSvg}
           alt="coded logo"

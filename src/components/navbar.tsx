@@ -66,7 +66,12 @@ const Navbar: React.FC = () => {
                   <Logo />
 
                   <div className="hidden lg:mx-auto lg:flex lg:items-center">
-                    <div className="flex xl:space-x-10 lg:space-x-5 items-center">
+                    <div
+                      data-aos="fade-down"
+                      ata-aos-easing="ease-in"
+                      data-aos-duration="1000"
+                      className="flex xl:space-x-10 lg:space-x-5 items-center"
+                    >
                       {navbarLinks.map((data, index) => {
                         const { name, path, isActive } = data;
 
@@ -85,7 +90,11 @@ const Navbar: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  data-aos="fade-down"
+                  ata-aos-easing="ease-in"
+                  data-aos-duration="1000"
+                >
                   <Link className="no-underline outline-none" to="/sign-up">
                     <BlackButton text="Get started" onClick={() => {}} />
                   </Link>

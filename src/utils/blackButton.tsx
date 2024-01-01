@@ -8,7 +8,7 @@ const BlackButton = ({ text, onClick }: ButtonPropsType) => {
     <>
       <button
         onClick={onClick}
-        className="outline-none rounded-full duration-300 ease-in hover:shadow-none py-2.5 px-5 bg-black text-white"
+        className="outline-none duration-300 rounded-full ease-in text-sm shadow-lg hover:shadow-none py-2.5 px-5 bg-black text-white"
       >
         {text}
       </button>
