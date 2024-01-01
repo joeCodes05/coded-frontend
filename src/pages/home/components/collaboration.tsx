@@ -42,7 +42,7 @@ const CollaborationComponent: React.FC = () => {
                     </h3>
                   </div>
 
-                  <p className="mt-3 text-gray-400 text-sm">{content}</p>
+                  <p className="mt-3 text-gray-400 text-[.8rem]">{content}</p>
                 </div>
               );
             })}

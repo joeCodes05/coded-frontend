@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
                           <Link
                             key={index}
                             to={path}
-                            className={`no-underline outline-none text-base duration-300 ease-in hover:text-primary ${
+                            className={`no-underline relative after:h-[2px] after:absolute after:w-0 hover:after:w-full after:duration-300 after:bg-primary after:bottom-0 after:left-[50%] after:-translate-x-[50%] outline-none text-base duration-300 ease-in hover:text-primary ${
                               isActive ? "text-primary" : "text-gray-900"
                             }`}
                           >
