@@ -19,7 +19,7 @@ const CollaborationComponent: React.FC = () => {
             data-aos="fade-right"
             ata-aos-easing="ease-in"
             data-aos-duration="1000"
-            className="lg:text-5xl md:text-3xl text-2xl font-normal capitalize md:mt-5 mt-3"
+            className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-normal capitalize md:mt-5 mt-3"
           >
             How we <span className="text-primary">collaborate</span> with you
           </h1>

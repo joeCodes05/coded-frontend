@@ -5,3 +5,8 @@ export interface CollaborationType {
   content: string;
   Icon: IconType;
 }
+
+export interface SkillsObjectStructure {
+  title: string;
+  percentageValue: number;
+}
