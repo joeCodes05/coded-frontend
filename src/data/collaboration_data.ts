@@ -1,7 +1,7 @@
 import { TfiThought } from "react-icons/tfi";
 import { BsFlag, BsClock } from "react-icons/bs";
 import { GoLightBulb } from "react-icons/go";
-import { CollaborationType } from "../types/button_props_types";
+import { CollaborationType } from "../types/object_types";
 
 export const collaborationData: CollaborationType[] = [
   {
