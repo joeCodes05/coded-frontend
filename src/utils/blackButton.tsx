@@ -1,7 +1,4 @@
-interface ButtonPropsType {
-  text: string;
-  onClick: () => void;
-}
+import { ButtonPropsType } from "../types/button_props_types";
 
 const BlackButton = ({ text, onClick }: ButtonPropsType) => {
   return (
