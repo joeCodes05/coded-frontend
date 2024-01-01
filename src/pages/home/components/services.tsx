@@ -1,6 +1,7 @@
+import React from "react";
 import { serviceData } from "../../../data/service_data";
 
-const ServiceComponent = () => {
+const ServiceComponent: React.FC = () => {
   return (
     <>
       <section className="py-20 w-full font-poppins">
@@ -55,7 +56,8 @@ const ServiceComponent = () => {
                   <div className="flex gap-3 items-center">
                     <div className="mt-5 w-full h-[2px] bg-gray-200 relative">
                       <div
-                        className={`absolute w-[${percentageValue}%] after:right-0 after:absolute after:top-[50%] after:-translate-y-[50%] after:h-[15px] after:w-[15px] after:bg-primary after:rounded-full bg-primary left-0 top-0 h-full`}
+                        style={{ width: `${percentageValue}%` }}
+                        className={`absolute after:right-0 after:absolute after:top-[50%] after:-translate-y-[50%] after:h-[10px] after:w-[10px] after:bg-primary after:rounded-full bg-primary left-0 top-0 h-full`}
                       ></div>
                     </div>
                     <div className="text-gray-400">{percentageValue}%</div>
