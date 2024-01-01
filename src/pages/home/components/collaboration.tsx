@@ -1,10 +1,12 @@
 import { collaborationData } from "../../../data/collaboration_data";
+import OutlineButtons from "../../../utils/outlineButton";
+import TextButton from "../../../utils/textButton";
 
 const CollaborationComponent: React.FC = () => {
   return (
     <>
-      <section className="bg-black w-full md:py-20 py-10 font-poppins">
-        <div className="max-w-6xl w-full mx-auto xl:px-0 lg:px-6 px-2 text-white">
+      <section className="bg-black w-full py-20 font-poppins">
+        <div className="max-w-6xl w-full mx-auto xl:px-0 md:px-6 px-3 text-white">
           <h5
             data-aos="fade-right"
             ata-aos-easing="ease-in"
@@ -44,6 +46,16 @@ const CollaborationComponent: React.FC = () => {
                 </div>
               );
             })}
+          </div>
+
+          <div
+            data-aos="fade-up"
+            ata-aos-easing="ease-in"
+            data-aos-duration="1000"
+            className="mt-10 flex gap-2 items-center"
+          >
+            <TextButton text="Learn more" onClick={() => {}} />
+            <OutlineButtons text="How we work" onClick={() => {}} />
           </div>
         </div>
       </section>
