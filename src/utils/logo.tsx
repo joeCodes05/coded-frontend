@@ -15,6 +15,9 @@ const Logo: React.FC = () => {
           alt="coded logo"
         />
         <img
+          data-aos="fade-down"
+          ata-aos-easing="ease-in"
+          data-aos-duration="1000"
           className="h-8 ml-24 w-auto sm:hidden block"
           src={logoSvgMobile}
           alt="coded logo"
