@@ -14,7 +14,7 @@ export interface SkillsObjectStructure {
 export interface BlogObjectStructure {
   title: string;
   content: string;
-  postImag: string;
+  postImage: string;
   postAuthor: string;
   postDate: string;
   postCategory: string;
