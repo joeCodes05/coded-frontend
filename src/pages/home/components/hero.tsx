@@ -4,7 +4,7 @@ const Hero: React.FC = () => {
   return (
     <>
       <section className="h-full w-full flex items-center font-poppins pt-10 md:pb-20 pb-10">
-        <div className="max-w-6xl w-full mx-auto xl:px-0 lg:px-6 px-2">
+        <div className="max-w-6xl w-full mx-auto xl:px-0 md:px-6 px-3">
           <div className="flex flex-col items-center">
             <h1
               data-aos="fade-down"

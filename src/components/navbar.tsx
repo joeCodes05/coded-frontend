@@ -50,7 +50,12 @@ const Navbar: React.FC = () => {
           <>
             <div className="mx-auto max-w-6xl py-3 xl:px-0 lg:px-6 px-2">
               <div className="relative flex h-fix items-center justify-between">
-                <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
+                <div
+                  data-aos="fade-down"
+                  ata-aos-easing="ease-in"
+                  data-aos-duration="1000"
+                  className="absolute inset-y-0 left-0 flex items-center lg:hidden"
+                >
                   {/* Mobile menu button*/}
                   <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-900  outline-none">
                     <span className="absolute -inset-0.5" />
