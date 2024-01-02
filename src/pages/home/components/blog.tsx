@@ -4,7 +4,7 @@ import BlogSwiperUtil from "../../../utils/blogSwiper";
 const BlogComponent: React.FC = () => {
   return (
     <>
-      <section className="bg-gray-50 w-full py-20 font-poppins">
+      <section className="w-full py-20 font-poppins">
         <div className="max-w-6xl w-full mx-auto xl:px-0 md:px-6 px-3 text-black">
           <h5
             data-aos="fade-right"

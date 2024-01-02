@@ -2,6 +2,7 @@ import Hero from "./components/hero";
 import CollaborationComponent from "./components/collaboration";
 import ServiceComponent from "./components/services";
 import BlogComponent from "./components/blog";
+import PricingComponent from "./components/pricing";
 
 const Home: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Home: React.FC = () => {
       <Hero />
       <CollaborationComponent />
       <ServiceComponent />
+      <PricingComponent />
       <BlogComponent />
     </>
   );
