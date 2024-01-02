@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
       >
         {({ open }) => (
           <>
-            <div className="mx-auto max-w-6xl py-3 xl:px-0 lg:px-6 px-2">
+            <div className="mx-auto max-w-6xl py-4 xl:px-0 lg:px-6 px-2">
               <div className="relative flex h-fix items-center justify-between">
                 <div
                   data-aos="fade-down"
