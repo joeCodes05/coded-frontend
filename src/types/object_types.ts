@@ -19,3 +19,9 @@ export interface BlogObjectStructure {
   postDate: string;
   postCategory: string;
 }
+
+export interface PricingPlansStructure {
+  price: number;
+  plan: string;
+  plansAddOns: string[];
+}
