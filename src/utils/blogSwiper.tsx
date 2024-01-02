@@ -57,7 +57,12 @@ const BlogSwiperUtil: React.FC = () => {
 
                 <div className="lg:mt-8 mt-5 grid lg:grid-cols-2 grid-cols-1 place-content-center gap-2">
                   <div>
-                    <h1 className="text-2xl">{title}</h1>
+                    <Link
+                      to="/"
+                      className="no-underline outline-none hover:underline"
+                    >
+                      <h1 className="text-2xl">{title}</h1>
+                    </Link>
                     <div className="mt-2 text-sm">
                       by:{" "}
                       <Link
