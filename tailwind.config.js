@@ -13,6 +13,7 @@ module.exports = {
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
+      fira: ["Fira Code", "sans-serif"],
     },
   },
   plugins: [],
