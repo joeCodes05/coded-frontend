@@ -16,12 +16,12 @@ export interface BlogObjectStructure {
   content: string;
   postImage: string;
   postAuthor: string;
-  postDate: string;
-  postCategory: string;
 }
 
-export interface PricingPlansStructure {
-  price: number;
-  plan: string;
-  plansAddOns: string[];
+export interface TestimonailsObjectStructure {
+  name: string;
+  occupation: string;
+  image: string;
+  content: string;
+  rating: number;
 }

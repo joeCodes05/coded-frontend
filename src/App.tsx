@@ -4,6 +4,8 @@ import Navbar from "./components/navbar";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ScrollToTop from "./utils/scrollTopButton";
+import Footer from "./components/footer";
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -15,9 +17,11 @@ const App: React.FC = () => {
     <>
       <Router>
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

@@ -54,8 +54,16 @@ const CollaborationComponent: React.FC = () => {
             data-aos-duration="1000"
             className="mt-10 flex gap-2 items-center"
           >
-            <TextButton text="Learn more" onClick={() => {}} />
-            <OutlineButtons text="How we work" onClick={() => {}} />
+            <TextButton
+              textColor="text-white"
+              text="Learn more"
+              onClick={() => {}}
+            />
+            <OutlineButtons
+              textColor=""
+              text="How we work"
+              onClick={() => {}}
+            />
           </div>
         </div>
       </section>

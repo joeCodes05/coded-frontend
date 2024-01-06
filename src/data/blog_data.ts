@@ -11,58 +11,46 @@ export const blogPostData: BlogObjectStructure[] = [
     title: "Easy & most powerful server platform",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    postCategory: "Technology",
     postAuthor: "John Doe",
     postImage: PostImageOne,
-    postDate: "2021-01-01",
   },
 
   {
     title: "Becoming a software developer in 2024?",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    postCategory: "Technology",
     postAuthor: "Nathaniel Joseph",
     postImage: PostImageTwo,
-    postDate: "2021-01-01",
   },
   {
     title: "Best and fast ways to travel today!",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    postCategory: "Travel",
     postAuthor: "John Ojo",
     postImage: PostImageThree,
-    postDate: "2021-01-01",
   },
 
   {
     title: "How to get the best use of AI",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    postCategory: "Travel",
     postAuthor: "Elon Musk",
     postImage: PostImageFour,
-    postDate: "2024-01-01",
   },
 
   {
     title: "How to get the best use of AI",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    postCategory: "Travel",
     postAuthor: "Elon Musk",
     postImage: PostImageFive,
-    postDate: "2024-01-01",
   },
 
   {
     title: "How to get the best use of AI",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    postCategory: "Travel",
     postAuthor: "Elon Musk",
     postImage: PostImageSix,
-    postDate: "2024-01-01",
   },
 ];

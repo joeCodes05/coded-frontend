@@ -33,7 +33,11 @@ const Hero: React.FC = () => {
               ata-aos-easing="ease-in"
               className="mt-5"
             >
-              <BlackButton text="Let's get started" onClick={() => {}} />
+              <BlackButton
+                textColor=""
+                text="Let's get started"
+                onClick={() => {}}
+              />
             </div>
           </div>
           <div

@@ -16,10 +16,7 @@ const Navbar: React.FC = () => {
     { name: "Home", path: "/", isActive: false },
     { name: "About", path: "/about", isActive: false },
     { name: "Services", path: "/services", isActive: false },
-    { name: "Pricing", path: "/pricing", isActive: false },
-    { name: "Portfolio", path: "/portfolio", isActive: false },
     { name: "Blog", path: "/blog", isActive: false },
-    { name: "Contact", path: "/contact", isActive: false },
   ];
 
   // change navbar state on scroll
@@ -101,7 +98,11 @@ const Navbar: React.FC = () => {
                   data-aos-duration="1000"
                 >
                   <Link className="no-underline outline-none" to="/sign-up">
-                    <BlackButton text="Get started" onClick={() => {}} />
+                    <BlackButton
+                      textColor=""
+                      text="Contact Us"
+                      onClick={() => {}}
+                    />
                   </Link>
                 </div>
               </div>

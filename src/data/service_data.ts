@@ -2,23 +2,8 @@ import { SkillsObjectStructure } from "../types/object_types";
 
 export const serviceData: SkillsObjectStructure[] = [
   {
-    title: "App development",
-    percentageValue: 60,
-  },
-
-  {
-    title: "Web development",
-    percentageValue: 95,
-  },
-
-  {
-    title: "UI/UX Design",
-    percentageValue: 50,
-  },
-
-  {
-    title: "Artificial Intelligence",
-    percentageValue: 80,
+    title: "Frontend Development",
+    percentageValue: 90,
   },
 
   {
@@ -27,7 +12,17 @@ export const serviceData: SkillsObjectStructure[] = [
   },
 
   {
+    title: "UI/UX Design",
+    percentageValue: 65,
+  },
+
+  {
     title: "Digital Marketing",
     percentageValue: 50,
+  },
+
+  {
+    title: "DevOps",
+    percentageValue: 15,
   },
 ];
