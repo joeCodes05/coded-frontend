@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 // import Swiper core and required modules
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import TextTruncate from "react-text-truncate";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import { Link } from "react-router-dom";
 import { blogPostData } from "../data/blog_data";
@@ -30,9 +29,8 @@ const BlogSwiperUtil: React.FC = () => {
   return (
     <>
       <Swiper
-        modules={[Navigation, Autoplay]}
+        modules={[Navigation]}
         grabCursor
-        autoplay
         navigation={{
           nextEl: ".next-button",
           prevEl: ".prev-button",
