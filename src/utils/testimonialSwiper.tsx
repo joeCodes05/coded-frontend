@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import Swiper core and required modules
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 // Import Swiper styles
