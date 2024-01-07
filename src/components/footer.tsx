@@ -162,19 +162,13 @@ const Footer: React.FC = () => {
                     </Link>
                   );
                 })}
-                <Link
-                  to="/contact"
-                  className="no-underline outline-none font-light text-gray-400"
-                >
-                  Contact
-                </Link>
               </div>
             </div>
           </div>
 
           <div className="mt-14 mb-5 border-t border-t-gray-700"></div>
           <div className="text-center text-gray-400 text-sm">
-            All rights reserved, <span>{currentYear}</span>
+            All rights reserved, &copy; <span>{currentYear}</span>
           </div>
         </div>
       </footer>
