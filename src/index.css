@@ -9,3 +9,11 @@ html {
 body {
   overflow-x: hidden;
 }
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.925)),
+    url("./assets/images/banner_cover.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
