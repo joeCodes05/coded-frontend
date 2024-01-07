@@ -1,9 +1,12 @@
 import React from "react";
+import Banner from "../../components/page_banner";
+import Overview from "./components/overview";
 
 const About: React.FC = () => {
   return (
     <>
-      <h1>About</h1>
+      <Banner pageText="About" headerText="About Us" />
+      <Overview />
     </>
   );
 };
