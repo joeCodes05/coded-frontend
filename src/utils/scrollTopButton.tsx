@@ -17,7 +17,8 @@ const ScrollToTop: React.FC = () => {
 
   // scroll to top of page when button is clicked
   const scrollTop = () => {
-    window.scrollY = 0;
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   };
 
   return (
