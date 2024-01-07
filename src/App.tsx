@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "./utils/scrollTopButton";
 import Footer from "./components/footer";
+import About from "./pages/about/about";
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </Router>
