@@ -8,7 +8,11 @@ const Home: React.FC = () => {
   return (
     <>
       <Hero />
-      <CollaborationComponent />
+      <CollaborationComponent
+        showButtons={true}
+        bgColor="bg-black"
+        textColor="text-white"
+      />
       <ServiceComponent />
       <BlogComponent />
       <Testimonial />
