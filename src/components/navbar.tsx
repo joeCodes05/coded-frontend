@@ -47,12 +47,7 @@ const Navbar: React.FC = () => {
           <>
             <div className="mx-auto max-w-6xl py-4 xl:px-0 lg:px-6 px-2">
               <div className="relative flex h-fix items-center justify-between">
-                <div
-                  data-aos="fade-down"
-                  ata-aos-easing="ease-in"
-                  data-aos-duration="1000"
-                  className="absolute inset-y-0 left-0 flex items-center lg:hidden"
-                >
+                <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
                   {/* Mobile menu button*/}
                   <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-900  outline-none">
                     <span className="absolute -inset-0.5" />
@@ -68,12 +63,7 @@ const Navbar: React.FC = () => {
                   <Logo />
 
                   <div className="hidden lg:mx-auto lg:flex lg:items-center">
-                    <div
-                      data-aos="fade-down"
-                      ata-aos-easing="ease-in"
-                      data-aos-duration="1000"
-                      className="flex xl:space-x-10 lg:space-x-5 items-center"
-                    >
+                    <div className="flex xl:space-x-10 lg:space-x-5 items-center">
                       {navbarLinks.map((data, index) => {
                         const { name, path, isActive } = data;
 
@@ -92,11 +82,7 @@ const Navbar: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div
-                  data-aos="fade-down"
-                  ata-aos-easing="ease-in"
-                  data-aos-duration="1000"
-                >
+                <div>
                   <Link className="no-underline outline-none" to="/sign-up">
                     <BlackButton
                       textColor=""
