@@ -67,8 +67,8 @@ const Footer: React.FC = () => {
     <>
       <footer className="py-20 w-full font-poppins bg-black">
         <div className="max-w-6xl w-full mx-auto xl:px-0 md:px-6 px-3 text-white">
-          <div className="flex lg:flex-row flex-col gap-10">
-            <div className="basis-2/4">
+          <div className="grid lg:grid-cols-5 md:grid-cols-2 gap-10">
+            <div className="lg:col-span-2">
               <h1 className="text-3xl font-semibold text-primary">Coded</h1>
 
               <p className="mt-3 text-gray-400 text-sm">
@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
 
-            <div className="basis-1/4">
+            <div>
               <h1 className="text-xl font-[500] text-primary">Quick Links</h1>
               <div className="mt-3 flex flex-col space-y-2">
                 {navbarLinks.map((data, index) => {
@@ -125,7 +125,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
 
-            <div className="basis-1/4">
+            <div>
               <h1 className="text-xl font-[500] text-primary">Live Support</h1>
 
               <div className="mt-3 flex flex-col space-y-2">
@@ -145,7 +145,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
 
-            <div className="basis-1/4">
+            <div>
               <h1 className="text-xl font-[500] text-primary">Other Links</h1>
 
               <div className="mt-3 flex flex-col space-y-2">
