@@ -5,20 +5,20 @@ import { FiCheckCircle } from "react-icons/fi";
 const Overview: React.FC = () => {
   return (
     <>
-      <section className="pt-20 pb-0 font-poppins text-black overflow-hidden">
+      <section className="py-20 font-poppins text-black overflow-hidden">
         <div className="max-w-6xl w-full mx-auto xl:px-0 md:px-6 px-3">
           <div className="flex md:flex-row flex-col-reverse gap-10 items-center">
-            <div className="basis-1/2 md:mt-0 mt-5">
+            <div className="basis-1/2 md:mt-0 mt-5 flex items-center justify-center">
               <div
-                data-aos="fade-up"
+                data-aos="fade-in"
                 ata-aos-easing="ease-in"
                 data-aos-duration="1000"
-                className="flex items-center justify-center"
+                className="flex items-center justify-center h-[90%] w-[90%] overflow-hidden rounded-full bg-primary"
               >
                 <img src={AboutImageOne} width="100%" alt="VR user" />
               </div>
             </div>
-            <div className="basis-1/2 md:pb-20 pb-0">
+            <div className="basis-1/2">
               <h5
                 data-aos="fade-left"
                 ata-aos-easing="ease-in"
@@ -41,7 +41,7 @@ const Overview: React.FC = () => {
                 data-aos="fade-up"
                 ata-aos-easing="ease-in"
                 data-aos-duration="1000"
-                className="mt-8 text-gray-400 lg:text-base text-sm"
+                className="mt-8 text-gray-400 text-sm font-light"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
@@ -49,7 +49,7 @@ const Overview: React.FC = () => {
                 maecenas accumsan lacus vel facilisis.
               </p>
 
-              <div className="mt-5 flex flex-col space-y-4">
+              <div className="mt-5 flex flex-col space-y-4 text-gray-400 text-sm font-light">
                 <div
                   data-aos="fade-up"
                   ata-aos-easing="ease-in"
