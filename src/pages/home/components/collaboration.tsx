@@ -1,12 +1,25 @@
+import { Link } from "react-router-dom";
 import { collaborationData } from "../../../data/collaboration_data";
 import OutlineButtons from "../../../utils/outlineButton";
 import TextButton from "../../../utils/textButton";
 
-const CollaborationComponent: React.FC = () => {
+interface ShowButtonsProps {
+  showButtons: boolean;
+  bgColor: string;
+  textColor: string;
+}
+
+const CollaborationComponent = ({
+  showButtons,
+  bgColor,
+  textColor,
+}: ShowButtonsProps) => {
   return (
     <>
-      <section className="bg-black w-full py-20 font-poppins">
-        <div className="max-w-6xl w-full mx-auto xl:px-0 md:px-6 px-3 text-white">
+      <section className={`${bgColor} w-full py-20 font-poppins`}>
+        <div
+          className={`max-w-6xl w-full mx-auto xl:px-0 md:px-6 px-3 ${textColor}`}
+        >
           <h5
             data-aos="fade-right"
             ata-aos-easing="ease-in"
@@ -54,16 +67,17 @@ const CollaborationComponent: React.FC = () => {
             data-aos-duration="1000"
             className="mt-10 flex gap-2 items-center"
           >
-            <TextButton
-              textColor="text-white"
-              text="Learn more"
-              onClick={() => {}}
-            />
-            <OutlineButtons
-              textColor=""
-              text="How we work"
-              onClick={() => {}}
-            />
+            {showButtons ? (
+              <>
+                <Link to="/about" className="no-underline outline-none">
+                  <TextButton
+                    textColor="text-white"
+                    text="Learn more"
+                    onClick={() => {}}
+                  />
+                </Link>
+              </>
+            ) : null}
           </div>
         </div>
       </section>
